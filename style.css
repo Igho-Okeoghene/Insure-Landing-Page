@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+:root {
+    --violet: hsl(256, 26%, 20%);
+    --blue: hsl(216, 30%, 68%);
+    --darkviolet: hsl(270, 9%, 17%);
+    --grayishviolet: hsl(273, 4%, 51%);
+    --lightgray: hsl(0, 0%, 98%);
+}
+body{
+    font-family:'Karla', sans-serif;
+    color: var(--darkviolet);
+}
+nav {
+    padding: 1.5rem;
+}
+.navigation{
+    display: none;
+}
+#home{
+    background-color: var(--violet);
+    color: white;
+}
+.mobileimg{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+}
+.desktopimg{
+    display: none;
+}
+#human{
+    padding: 5rem 1rem;
+    text-align: center;
+}
+#human hr{
+    display: none;
+}
+h2{
+    font-weight: 400;
+    font-family:'DM Serif Display', serif;
+    font-size: 2.6rem;
+    text-align: center;
+    line-height: 1;
+}
+.padgap{
+    padding: 1.5rem 1rem;
+    text-align: center;
+    line-height: 1.7;
+}
+.btn_transparent{
+    border: 1px solid white;
+    padding: 0.8rem 2rem;
+    text-align: center;
+    background-color: var(--violet);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+}
+#different{
+    padding: 7rem 1.5rem;
+    text-align: center;
+}
+hr{
+    width: 9rem;
+    margin: 0 auto;
+    background-color: var(--violet);
+    color: var(--violet);
+}
+#different h2{
+    padding: 3rem 0;
+}
+.prop img{
+    padding: 1.5rem 0;
+}
+.prop h3{
+    font-size: 1.5rem;
+    font-family:'DM Serif Display', serif;
+    padding: 1rem 0;
+}
+.prop p{
+    line-height: 1.7;
+    color: var(--grayishviolet);
+    padding-bottom: 2rem;
+}
+#find{
+    background-color: var(--violet);
+    color: white;
+    margin: 2rem 1.5rem;
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 8rem;
+}
+#find button{
+  margin-top: 3rem;
+}
+footer{
+    background-color: var(--lightgray);
+    padding: 6rem 1.5rem;
+    text-align: center;
+}
+.social-icons{
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+}
+.social-icons li{
+    padding-left: 0.9rem;
+}
+footer hr{
+    width: 20rem;
+}
+.links{
+    padding-top: 3rem;
+}
+.links ul{
+    list-style-type: none;
+    color: var(--darkviolet);
+    text-transform: uppercase;
+}
+.links li{
+    font-weight: 700;
+    color: var(--darkviolet);
+    font-size: 0.9rem;
+    padding-bottom: 0.8rem;
+}
+.links li:first-of-type{
+    color: var(--grayishviolet);
+    padding-bottom: 2.5rem;
+}
+.attribution{
+    padding-top: 3rem;
+
+}
+@media (min-width: 768px) {
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .padded{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation li{
+        list-style-type: none;
+        padding-left: 1.5rem;
+    }
+    .mobileimg{
+        display: none;
+    }
+    .desktopimg{
+        display: none;
+    }
+    #home{
+        padding: 5rem 4rem;
+    }
+    #human{
+        text-align: left;
+    }
+    #human h2{
+        text-align: left;
+        padding-top: 2.5rem;
+    }
+    .padgap{
+        padding: 1.5rem 0;
+        text-align: left;
+        width: 100%;
+    }
+    #different{
+        text-align: left;
+        padding: 5rem 4rem;
+    }
+    #human hr{
+        display: block;
+    }
+    #different h2{
+        text-align: left;
+    }
+    hr{
+        margin: 0;
+    }
+    .prop{
+       padding-right: 2rem;
+    }
+    .all-props{
+        display: flex;
+    }
+    #find{
+        margin: 4rem;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 4rem;
+    }
+    #find h2{
+        text-align: left;
+        width: 40%;
+    }
+    #find button{
+        margin-top: 0rem;
+        margin-left: 4rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 1rem;
+    }
+    footer{
+        padding:4rem;
+        text-align: left;
+    }
+    .icons img, nav img{
+        height: 1rem;
+    }
+    .social-icons{
+       padding: 0; 
+    }
+    .icons{
+        display: flex;
+        justify-content: space-between;
+    }
+    footer hr{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    .all-links{
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
+    }
+}
+@media (min-width: 1024px) {
+    .padded{
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    #home{
+        padding: 6rem 7rem;
+    }
+    #different{
+        padding: 13rem 7rem 4rem 7rem;
+    }
+    #find{
+        margin:7rem;
+    }
+    footer{
+        padding: 7rem;
+    }
+    .desktopimg{
+        display: block;
+        float: right;
+        margin-left: 1rem;
+        padding-top: 4rem
+    }
+}
