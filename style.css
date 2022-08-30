@@ -21,6 +21,22 @@ nav {
 }
 .navigation{
     display: none;
+    color: var(--grayishviolet);
+    text-transform: uppercase;
+}
+.navigation li:hover{
+    cursor: pointer;
+    color: var(--violet);
+    font-weight: 700;
+}
+#border{
+    border: 2px solid var(--violet);
+    padding: 5px 20px;
+    margin: -5px 0 0 1.5rem;
+}
+#border:hover{
+    background-color: var(--violet);
+    color: white;
 }
 #home{
     background-color: var(--violet);
@@ -55,7 +71,7 @@ h2{
     line-height: 1.7;
 }
 .btn_transparent{
-    border: 1px solid white;
+    border: 2px solid white;
     padding: 0.8rem 2rem;
     text-align: center;
     background-color: var(--violet);
@@ -64,6 +80,11 @@ h2{
     text-transform: uppercase;
     font-size: 0.7rem;
     letter-spacing: 2px;
+}
+.btn_transparent:hover{
+    background-color: white;
+    color: var(--violet);
+    font-weight: 700;
 }
 #different{
     padding: 7rem 1.5rem;
@@ -78,9 +99,12 @@ hr{
 #different h2{
     padding: 3rem 0;
 }
-.prop img{
-    padding: 1.5rem 0;
+.icon{
+    width: 2rem;
+    color: blue;
 }
+
+
 .prop h3{
     font-size: 1.5rem;
     font-family:'DM Serif Display', serif;
@@ -143,6 +167,9 @@ footer hr{
 
 }
 @media (min-width: 768px) {
+    #logo{
+        height: 1.2rem;
+    }
     nav{
         display: flex;
         justify-content: space-between;
@@ -242,6 +269,9 @@ footer hr{
     }
 }
 @media (min-width: 1024px) {
+    #logo{
+        height: 1.5rem;
+    }
     .padded{
         padding-left: 7rem;
         padding-right: 7rem;

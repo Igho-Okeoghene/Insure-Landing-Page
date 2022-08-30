@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <script src="https://kit.fontawesome.com/bb5c8968bd.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Insure landing page</title>
@@ -13,15 +13,15 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); font-size: 11px;}
   </style>
-</head>
+ </head>
 <body>
 <nav class="padded">
-<img src="images\logo.svg" alt="insure logo">
+<img src="images\logo.svg" alt="insure logo" id="logo">
   <ul class="navigation">
     <li>How we work</li>
     <li>Blog</li>
     <li>Account</li>
-    <li class="border">View plans</li>
+    <li id="border">View plans</li>
   </ul>
 </nav>
 <section id="home">
@@ -46,7 +46,7 @@
   <h2>We’re different</h2>
   <div class="all-props">
     <div class="prop">
-      <img src="images\icon-snappy-process.svg" alt="thunder-bolt">
+      <img  class="icon" src="images\bolt-lightning-solid.svg" alt="thunder-bolt">
       <h3>Snappy Process</h3>
       <p>Our application process can be completed in minutes, not hours. Don’t get 
         stuck filling in tedious forms.</p>
