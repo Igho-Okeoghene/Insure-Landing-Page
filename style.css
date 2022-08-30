@@ -99,12 +99,9 @@ hr{
 #different h2{
     padding: 3rem 0;
 }
-.icon{
-    width: 2rem;
-    color: blue;
+.prop img{
+    padding: 1.5rem 0;
 }
-
-
 .prop h3{
     font-size: 1.5rem;
     font-family:'DM Serif Display', serif;
