@@ -11,13 +11,12 @@ This is a solution to the [Insure landing page challenge on Frontend Mentor](htt
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
 
 ## Overview
-A simple landing page built with HTML and CSS. This project is responsive, for both mobile and desktop devices.
+A simple landing page built with HTML and CSS. This project is responsive.
 ### The challenge
 
 Users should be able to:
@@ -31,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Insure Landing Page](https://github.com/Igho-Okeoghene/Insure-Landing-Page)
+- Live Site URL: [Insure Landing Page](https://igho-okeoghene.github.io/Insure-Landing-Page/)
 
 ## My process
 - I mapped out the elements and tags for each section.
@@ -46,14 +45,10 @@ Users should be able to:
 
 ### What I learned
 
-One new thing I learnt while building this landing page would be, how to position background images on backound colours.
+One new thing I learnt while building this landing page would be, how to position background images.
 
-One major challenge I encountered was when I tried to change the color of the svg icons underneath "We're different". I googled about it and saw amazing ways to have that done, but I decided to use font awesome icons instead, because the codes were less crowded on the system and I prefer when the svg path is not entirely spelt out on my html page.
+One major challenge I encountered was when I tried to change the color of the svg icons underneath "We're different" section. I googled about it and found out ways to have that done, but I decided to use font awesome icons instead, because the codes were less crowded on the system and I prefer when the svg path is not entirely written out in my code.
 
-
-### Continued development
-
-I recently learnt more about CSS Grid. I have always preferred Flexbox to Grid, but I'm hoping to use CSS Grid for my subsequent projects.
 
 ### Useful resources
 
