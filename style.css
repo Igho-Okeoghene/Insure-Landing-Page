@@ -65,7 +65,7 @@ nav {
 #human::before{
     content: '';
     position: absolute;
-    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-image: url("images/bg-pattern-intro-left-mobile.svg");
     background-position: top left;
     background-repeat: no-repeat;
     top: 0%;
@@ -82,7 +82,7 @@ nav {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+    background-image: url("images/bg-pattern-intro-right-mobile.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
 }
@@ -148,7 +148,7 @@ hr{
     padding: 4rem 1rem;
     text-align: center;
     margin-bottom: 8rem;
-    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-image: url("images/bg-pattern-how-we-work-mobile.svg");
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -156,7 +156,7 @@ hr{
   margin-top: 3rem;
 }
 footer{
-    background: var(--lightgray) url("../images/bg-pattern-footer-mobile.svg") no-repeat;
+    background: var(--lightgray) url("images/bg-pattern-footer-mobile.svg") no-repeat;
     padding: 6rem 1.5rem 4rem;
     text-align: center;
 }
@@ -244,7 +244,7 @@ footer hr{
         position: relative;
     }
     .flex::before{
-        background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+        background-image: url("images/bg-pattern-intro-right-desktop.svg");
         background-position: 100% -10%, 5% 25%;
         background-repeat: no-repeat;
         content: '';
@@ -263,7 +263,7 @@ footer hr{
         background-image: none;
     }
     #human::after{
-        background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+        background-image: url("images/bg-pattern-intro-left-desktop.svg");
         z-index: 0;
         position: absolute;
         bottom: -70%;
@@ -306,7 +306,7 @@ footer hr{
         justify-content: space-between;
         text-align: left;
         padding: 4rem;
-        background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
+        background-image: url("images/bg-pattern-how-we-work-desktop.svg");
     }
     #find h2{
         text-align: left;
@@ -322,7 +322,7 @@ footer hr{
     footer{
         padding:4rem;
         text-align: left;
-        background: var(--lightgray) url("../images/bg-pattern-footer-desktop.svg") no-repeat;
+        background: var(--lightgray) url("images/bg-pattern-footer-desktop.svg") no-repeat;
    }
     .icons img, nav img{
         height: 1rem;
