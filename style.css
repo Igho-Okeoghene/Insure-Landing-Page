@@ -24,15 +24,20 @@ nav {
     color: var(--grayishviolet);
     text-transform: uppercase;
 }
+.navigation li a{
+    text-decoration: none; 
+    color: var(--darkviolet);
+}
 .navigation li:hover{
     cursor: pointer;
     color: var(--violet);
     font-weight: 700;
 }
 #border{
-    border: 2px solid var(--violet);
-    padding: 5px 20px;
-    margin: -5px 0 0 1.5rem;
+    border: 1px solid var(--violet);
+    padding: 12px 25px;
+    margin: -12px 0 0 1.5rem;
+    font-weight: 600;
 }
 #border:hover{
     background-color: var(--violet);
@@ -54,12 +59,38 @@ nav {
 #human{
     padding: 5rem 1rem;
     text-align: center;
+    position: relative;
+    
+}
+#human::before{
+    content: '';
+    position: absolute;
+    background-image: url(../images/bg-pattern-intro-left-mobile.svg);
+    background-position: top left;
+    background-repeat: no-repeat;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    left: 0;
+}
+#human::after {
+    content: '';
+    position: absolute;
+    bottom: -40%;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url("../images/bg-pattern-intro-right-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
 }
 #human hr{
     display: none;
 }
 h2{
-    font-weight: 400;
+    font-weight: 600;
     font-family:'DM Serif Display', serif;
     font-size: 2.6rem;
     text-align: center;
@@ -84,6 +115,7 @@ h2{
 .btn_transparent:hover{
     background-color: white;
     color: var(--violet);
+    border: 3px solid var(--darkviolet);
     font-weight: 700;
 }
 #different{
@@ -98,9 +130,6 @@ hr{
 }
 #different h2{
     padding: 3rem 0;
-}
-.prop img{
-    padding: 1.5rem 0;
 }
 .prop h3{
     font-size: 1.5rem;
@@ -119,17 +148,20 @@ hr{
     padding: 4rem 1rem;
     text-align: center;
     margin-bottom: 8rem;
+    background-image: url("../images/bg-pattern-how-we-work-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 #find button{
   margin-top: 3rem;
 }
 footer{
-    background-color: var(--lightgray);
-    padding: 6rem 1.5rem;
+    background: var(--lightgray) url("../images/bg-pattern-footer-mobile.svg") no-repeat;
+    padding: 6rem 1.5rem 4rem;
     text-align: center;
 }
 .social-icons{
-    padding: 2rem 0;
+    padding: 2rem 0 1rem;
     display: flex;
     justify-content: center;
     list-style-type: none;
@@ -163,6 +195,24 @@ footer hr{
     padding-top: 3rem;
 
 }
+.fa{
+    font-size: 2rem;
+    border-radius: 50%;
+    background-color: var(--blue);
+    padding: 1.2rem 1.6rem;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    box-shadow: 2px 2px var(--grayishviolet) ;
+    color: white;
+}
+.fa-user{
+    padding: 1rem 1.2rem;
+}
+.fa:hover{
+    background-color: var(--darkviolet);
+    box-shadow: 4px 4px var(--lightviolet) ;
+}
 @media (min-width: 768px) {
     #logo{
         height: 1.2rem;
@@ -191,9 +241,36 @@ footer hr{
     }
     #home{
         padding: 5rem 4rem;
+        position: relative;
+    }
+    .flex::before{
+        background-image: url("../images/bg-pattern-intro-right-desktop.svg");
+        background-position: 100% -10%, 5% 25%;
+        background-repeat: no-repeat;
+        content: '';
+        width: 200%;
+        height: 200%;
+        right: 0;
+        top: 0;
+        z-index: 2;
+        overflow: hidden;
+        position: absolute
     }
     #human{
         text-align: left;
+    }
+    #human::before{
+        background-image: none;
+    }
+    #human::after{
+        background-image: url("../images/bg-pattern-intro-left-desktop.svg");
+        z-index: 0;
+        position: absolute;
+        bottom: -70%;
+        right: calc(100% - 60px);
+        content: '';
+        width: 100%;
+        height: 100%;
     }
     #human h2{
         text-align: left;
@@ -229,6 +306,7 @@ footer hr{
         justify-content: space-between;
         text-align: left;
         padding: 4rem;
+        background-image: url("../images/bg-pattern-how-we-work-desktop.svg");
     }
     #find h2{
         text-align: left;
@@ -244,7 +322,8 @@ footer hr{
     footer{
         padding:4rem;
         text-align: left;
-    }
+        background: var(--lightgray) url("../images/bg-pattern-footer-desktop.svg") no-repeat;
+   }
     .icons img, nav img{
         height: 1rem;
     }
